@@ -1,0 +1,6 @@
+apiVersion: v2
+name: alice-cache-cloud
+description: ALICE Cache Cloud
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
