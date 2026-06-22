@@ -1,3 +1,5 @@
+#![allow(dead_code)] // SaaS template: WIP request struct field 未使用、将来 handler で使う
+
 use axum::{
     extract::State,
     response::Json,
