@@ -237,7 +237,7 @@ async fn forward(url: &str, req: Request) -> Result<Response, (StatusCode, Json<
         .unwrap_or_default();
     let method = req.method().clone();
     let hdrs = req.headers().clone();
-    let body = axum::body::to_bytes(req.into_body(), 1 * 1024 * 1024)
+    let body = axum::body::to_bytes(req.into_body(), 1024 * 1024)
         .await
         .map_err(|e| {
             (
