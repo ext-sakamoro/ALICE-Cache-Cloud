@@ -82,7 +82,7 @@ export default function ConsolePage() {
           <button
             key={t}
             onClick={() => { setTab(t); setResult(""); }}
-            className={`px-4 py-2 rounded text-sm font-semibold transition-colors ${
+            className={`px-4 py-2 rounded-sm text-sm font-semibold transition-colors ${
               tab === t
                 ? "bg-green-600 text-gray-900"
                 : "bg-gray-800 text-green-400 hover:bg-gray-700"
@@ -102,7 +102,7 @@ export default function ConsolePage() {
               <input
                 value={setNamespace}
                 onChange={(e) => setSetNamespace(e.target.value)}
-                className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-green-400 text-sm"
+                className="w-full bg-gray-900 border border-gray-700 rounded-sm px-3 py-2 text-green-400 text-sm"
               />
             </div>
             <div>
@@ -110,7 +110,7 @@ export default function ConsolePage() {
               <input
                 value={setKey}
                 onChange={(e) => setSetKey(e.target.value)}
-                className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-green-400 text-sm"
+                className="w-full bg-gray-900 border border-gray-700 rounded-sm px-3 py-2 text-green-400 text-sm"
               />
             </div>
             <div>
@@ -119,7 +119,7 @@ export default function ConsolePage() {
                 value={setValue}
                 onChange={(e) => setSetValue(e.target.value)}
                 rows={3}
-                className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-green-400 text-sm resize-none"
+                className="w-full bg-gray-900 border border-gray-700 rounded-sm px-3 py-2 text-green-400 text-sm resize-none"
               />
             </div>
             <div>
@@ -128,7 +128,7 @@ export default function ConsolePage() {
                 value={setTtl}
                 onChange={(e) => setSetTtl(e.target.value)}
                 type="number"
-                className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-green-400 text-sm"
+                className="w-full bg-gray-900 border border-gray-700 rounded-sm px-3 py-2 text-green-400 text-sm"
               />
             </div>
           </>
@@ -141,7 +141,7 @@ export default function ConsolePage() {
               <input
                 value={getNamespace}
                 onChange={(e) => setGetNamespace(e.target.value)}
-                className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-green-400 text-sm"
+                className="w-full bg-gray-900 border border-gray-700 rounded-sm px-3 py-2 text-green-400 text-sm"
               />
             </div>
             <div>
@@ -149,7 +149,7 @@ export default function ConsolePage() {
               <input
                 value={getKey}
                 onChange={(e) => setGetKey(e.target.value)}
-                className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-green-400 text-sm"
+                className="w-full bg-gray-900 border border-gray-700 rounded-sm px-3 py-2 text-green-400 text-sm"
               />
             </div>
           </>
@@ -162,7 +162,7 @@ export default function ConsolePage() {
               <input
                 value={prefetchNamespace}
                 onChange={(e) => setPrefetchNamespace(e.target.value)}
-                className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-green-400 text-sm"
+                className="w-full bg-gray-900 border border-gray-700 rounded-sm px-3 py-2 text-green-400 text-sm"
               />
             </div>
             <div>
@@ -173,7 +173,7 @@ export default function ConsolePage() {
                 value={prefetchKeys}
                 onChange={(e) => setPrefetchKeys(e.target.value)}
                 rows={5}
-                className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-green-400 text-sm resize-none"
+                className="w-full bg-gray-900 border border-gray-700 rounded-sm px-3 py-2 text-green-400 text-sm resize-none"
               />
             </div>
           </>
@@ -190,7 +190,7 @@ export default function ConsolePage() {
       <button
         onClick={run}
         disabled={loading}
-        className="px-6 py-2 bg-green-600 hover:bg-green-500 disabled:bg-gray-700 text-gray-900 font-bold rounded transition-colors"
+        className="px-6 py-2 bg-green-600 hover:bg-green-500 disabled:bg-gray-700 text-gray-900 font-bold rounded-sm transition-colors"
       >
         {loading ? "Running..." : "Run"}
       </button>

@@ -36,7 +36,7 @@ export default function HomePage() {
         </span>
         <Link
           href="/dashboard/console"
-          className="px-4 py-1.5 text-sm bg-green-600 hover:bg-green-500 text-gray-900 font-semibold rounded transition-colors"
+          className="px-4 py-1.5 text-sm bg-green-600 hover:bg-green-500 text-gray-900 font-semibold rounded-sm transition-colors"
         >
           Dashboard
         </Link>
@@ -109,7 +109,7 @@ export default function HomePage() {
                 >
                   <td className="py-3 pr-6">
                     <span
-                      className={`px-2 py-0.5 rounded text-xs font-mono font-bold ${
+                      className={`px-2 py-0.5 rounded-sm text-xs font-mono font-bold ${
                         e.method === "GET"
                           ? "bg-blue-900 text-blue-300"
                           : e.method === "DELETE"
